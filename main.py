@@ -27,3 +27,18 @@ import pprint
 # with open ('image.jpeg', 'wb') as file:
 #     file.write(responce.content)
 
+# response = requests.get('https://google.com')
+# print(response.status_code)
+# print(response.ok)
+# print(response.headers)
+# print(response.text)
+
+# url = "https://jsonplaceholder.typicode.com/posts"
+# data = {
+#     'title': 'тестовый пост запрос',
+#     'body': 'тестовый контент пост запроса',
+#     'userId': 2
+# }
+# response = requests.post(url, data=data)
+# print(response.status_code)
+# print(f"ответ сервера: {response.json()}")
