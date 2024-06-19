@@ -1,6 +1,5 @@
 import requests
 import pprint
-
 # response = requests.get('https://api.github.com')
 # response_json = response.json()
 # # print(response.status_code)
@@ -13,11 +12,18 @@ import pprint
 #
 # print(response_json)
 # pprint.pprint(response_json)
+#
+# params = {
+#     'q': 'python'
+# }
+# responce = requests.get('https://api.github.com/search/repositories', params=params)
+# responce_json = responce.json()
+# #pprint.pprint(responce_json)
+# print(f"Количество репозиториев python', {responce_json['total_count']}")
 
-params = {
-    'q': 'python'
-}
-responce = requests.get('https://api.github.com/search/repositories', params=params)
-responce_json = responce.json()
-#pprint.pprint(responce_json)
-print(f"Количество репозиториев python', {responce_json['total_count']}")
+# img = "https://tastyseason.ru/distributor/"
+# responce = requests.get(img)
+#
+# with open ('image.jpeg', 'wb') as file:
+#     file.write(responce.content)
+
